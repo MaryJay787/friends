@@ -1,5 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
 <p>
   <strong>First name:</strong>
   <%= @friend.first_name %>
@@ -25,5 +35,5 @@
   <%= @friend.hashtag %>
 </p>
 
-<%= link_to 'Edit', edit_friend_path(@friend) %> |
-<%= link_to 'Back', friends_path %>
+<%= link_to 'Edit', edit_friend_path(@friend), class:'btn btn-info' %> 
+<%= link_to 'Back', friends_path, class:'btn btn-warning' %>
