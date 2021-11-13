@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :friends
   # get "/articles", to: "articles#index"
   get 'home/about'
